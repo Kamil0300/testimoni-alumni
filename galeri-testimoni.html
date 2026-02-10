@@ -1,0 +1,105 @@
+<!-- ===== HALAMAN GALERI TESTIMONI ===== -->
+<!-- Simpan bagian di bawah ini sebagai file: galeri-testimoni.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri Testimoni Alumni</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f8fafc;
+      color: #1f2933;
+    }
+
+    header {
+      padding: 24px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    .gallery {
+      max-width: 1200px;
+      margin: auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      align-items: start;
+    }
+
+    .photo-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+      transition: transform .2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .photo-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .caption {
+      padding: 14px 16px;
+      font-size: .95rem;
+      color: #374151;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 22px;
+      border-radius: 999px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: .85rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Galeri Testimoni Alumni</h1>
+    <p>Potret alumni setelah bekerja dan melanjutkan pendidikan</p>
+    <a href="index.html" class="back">← Kembali ke Beranda</a>
+  </header>
+
+  <section class="gallery">
+    <div class="photo-card">
+      <img src="alumni1.jpeg" alt="Alumni bekerja">
+      <div class="caption">Alumni bekerja di PT.Primajasa</div>
+    </div>
+    <div class="photo-card">
+      <img src="alumni2.jpeg" alt="Alumni kuliah">
+      <div class="caption">Alumni melanjutkan studi ke perguruan tinggi</div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 SMK Pancasila Manonjaya | Galeri Testimoni Alumni
+  </footer>
+
+</body>
+</html>
